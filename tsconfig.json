@@ -1,14 +1,22 @@
-{
-  "compilerOptions": {
-    "sourceMap": true,
-    "target": "es2017",
-    "outDir": "./dist",
-    "baseUrl": "./src"
+{  
+  "compilerOptions":{  
+     "module":"commonjs",
+     "moduleResolution":"node",
+     "pretty":true,
+     "sourceMap":true,
+     "outDir":"./dist",
+     "baseUrl":"./src",
+     "emitDecoratorMetadata":true,
+     "experimentalDecorators":true,
+     "target":"es6",
+     "typeRoots":[  
+        "node_modules/@types"
+     ]
   },
-  "include": [
-    "src/**/*.ts"
+  "include":[  
+     "src/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
+  "exclude":[  
+     "node_modules"
   ]
 }
